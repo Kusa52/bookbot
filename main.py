@@ -1,0 +1,6 @@
+def main():
+    print(f"{word_count()} words found in the document")
+
+from stats import word_count
+
+main()
