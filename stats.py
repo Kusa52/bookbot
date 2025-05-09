@@ -11,3 +11,12 @@ def get_char_count(book_text):
             char_count[char] += 1
 
     return char_count
+
+def get_dict_sort(dict):
+    dict_list = []
+    for char in dict:
+        dict_list.append({"char": char, "num": dict[char]})
+
+    # print(dict_list)
+    dict_list.sort(reverse=True, key=lambda char: char["num"])
+    return dict_list
